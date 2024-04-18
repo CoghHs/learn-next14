@@ -1,8 +1,59 @@
+.backdropWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backdrop {
+  border-radius: 50px;
+  position: relative;
+  margin-top: 100px;
+  width: 85%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.posterPath {
+  position: absolute;
+  border-radius: 40px;
+  object-fit: cover;
+  width: 300px;
+  height: 400px;
+  left: 200px;
+  top: 250px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.374);
+}
+
+.btn {
+  position: absolute;
+  font-size: 18px;
+  border: 0;
+  border-radius: 10px;
+  width: 150px;
+  height: 50px;
+  left: 530px;
+  top: 520px;
+  background-color: rgba(0, 0, 0, 0.468);
+  color: white;
+  transition: transfrom 0.3s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
 .container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 25px;
-  max-width: 90%;
-  width: 100%;
-  margin: 0 auto;
+  top: 700px;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
+
+.container img {
+  top: 100px;
+  object-fit: cover;
+  width: 300px;
+  height: 400px;
 }

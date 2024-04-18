@@ -10,11 +10,17 @@ export default function Navigation() {
     <nav className={styles.nav}>
       <ul>
         <li>
-          <Link href="/">Home</Link> {path === "/" ? "🔥" : ""}
+          <Link href="/" className={path === "/" ? styles.selected : ""}>
+            홈
+          </Link>
         </li>
         <li>
-          <Link href="/about-us">About Us</Link>
-          {path === "/about-us" ? "🔥" : ""}
+          <Link
+            href="/about-us"
+            className={path === "/about-us" ? styles.selected : ""}
+          >
+            더보기
+          </Link>
         </li>
       </ul>
     </nav>
